@@ -118,6 +118,7 @@ set obj [get_filesets sim_1]
 # Set 'sim_1' fileset properties
 set obj [get_filesets sim_1]
 set_property "top" "$argv" $obj
+set_property source_mgmt_mode DisplayOnly [current_project]
 set_property "xelab.nosort" "1" $obj
 set_property "xelab.unifast" "" $obj
 
